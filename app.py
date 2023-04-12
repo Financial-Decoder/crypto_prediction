@@ -5,7 +5,7 @@ import yfinance as yf
 from prophet import Prophet
 import plotly.graph_objs as go
 # Set page title
-st.set_page_config(page_title='Stock Prediction App')
+st.set_page_config(page_title='Crypto Prediction App')
 
 # Define function to get stock data
 @st.cache
@@ -49,7 +49,7 @@ def main():
     st.title('Crypto Prediction')
 
     # Get user input
-    stocks = ( 'SAFEMOON-INR', 'HOT-INR', 'RVN-INR', 'CHZ-INR', 'MATIC-INR', 'ALGO-INR', 'ONE-INR', 'DASH-INR', 'BTG-INR', 'KAVA-INR', 'ZIL-INR','BTC-INR', 'ETH-INR', 'ADA-INR', 'BNB-INR', 'XRP-INR')
+    stocks = (  'RVN-INR', 'CHZ-INR', 'MATIC-INR', 'ALGO-INR',  'DASH-INR', 'BTG-INR', 'KAVA-INR', 'ZIL-INR','BTC-INR', 'ETH-INR', 'ADA-INR', 'BNB-INR', 'XRP-INR')
     ticker = st.selectbox("Select dataset for prediction", stocks)
     years = st.slider('Select number of years to predict', min_value=1, max_value=10, value=2)
 
