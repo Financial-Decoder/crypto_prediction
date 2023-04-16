@@ -4,4 +4,3 @@ numpy
 matplotlib
 prophet
 plotly
-streamlit-theming
