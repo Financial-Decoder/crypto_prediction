@@ -4,4 +4,4 @@ numpy
 matplotlib
 prophet
 plotly
-streamlit==1.0
+streamlit==1.1
