@@ -6,9 +6,8 @@ from prophet import Prophet
 import plotly.graph_objs as go
 # Set page title
 st.set_page_config(page_title='Crypto Prediction App',page_icon=":chart_with_upwards_trend:")
-url = 'https://cypherak007.github.io/financedecoder/index.html'
-link_text = 'Home'
-st.markdown('[{}]({})'.format(link_text, url))
+if st.button("Home"):
+    st.markdown('(https://cypherak007.github.io/financedecoder/index.html)')
 # Define function to get stock data
 @st.cache
 def load_data(ticker):
