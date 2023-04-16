@@ -4,7 +4,7 @@ import numpy as np
 import yfinance as yf
 from prophet import Prophet
 import plotly.graph_objs as go
-st.theme("dark")
+st.set_theme("dark")
 # Set page title
 st.set_page_config(page_title='Crypto Prediction App')
 
