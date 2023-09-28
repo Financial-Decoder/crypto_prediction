@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import yfinance as yf
 from prophet import Prophet
 import plotly.graph_objs as go
+import yfinance as yf
 # Set page title
 st.set_page_config(page_title='Crypto Prediction App',page_icon=":chart_with_upwards_trend:")
 # Define function to get stock data
